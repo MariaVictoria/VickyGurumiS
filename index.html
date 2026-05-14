@@ -2,249 +2,197 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Vicky GurumiS</title>
+<title>Vicky GurumiS</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: #fff9fb;
-            color: #555;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff9fb;
+    color: #555;
+}
 
-        /* NAV */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 25px 50px;
-        }
+/* NAV */
+nav {
+    padding: 25px 40px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #ff7aa2;
+}
 
-        .logo {
-            font-weight: 700;
-            font-size: 24px;
-            color: #ff7aa2;
-        }
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(180deg, #ffe4ec, #ffffff);
+}
 
-        /* HERO */
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(180deg, #ffe4ec, #ffffff);
-        }
+.hero h1 {
+    font-size: 42px;
+    color: #ff5c8a;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            color: #ff5c8a;
-            margin-bottom: 10px;
-        }
+.hero p {
+    font-size: 18px;
+}
 
-        .hero p {
-            font-size: 18px;
-            opacity: 0.8;
-        }
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #ff7aa2;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 30px;
-            background: #ff7aa2;
-            color: white;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+/* SECCIONES */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        .btn:hover {
-            background: #ff5c8a;
-            transform: scale(1.05);
-        }
+/* GALERÍA PRO */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 30px;
+}
 
-        /* SECCIONES */
-        .section {
-            padding: 70px 20px;
-            text-align: center;
-        }
+.item {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
 
-        .section h2 {
-            color: #c08497;
-            font-size: 28px;
-        }
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
 
-        /* GRID */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-            padding: 40px;
-        }
+.item p {
+    font-size: 14px;
+    margin-top: 8px;
+}
 
-        /* CARDS */
-        .card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            transition: 0.3s;
-        }
+/* COLORES */
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
 
-        .card:hover {
-            transform: translateY(-8px);
-        }
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
-        .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
+/* SOBRE MI */
+.about {
+    max-width: 600px;
+    margin: auto;
+}
 
-        .card p {
-            padding: 15px;
-        }
+/* FOOTER */
+footer {
+    padding: 40px;
+    background: #ffe4ec;
+    text-align: center;
+}
 
-        /* HILADOS */
-        .colors {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .color {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* SOBRE MI */
-        .about {
-            max-width: 600px;
-            margin: auto;
-            line-height: 1.6;
-        }
-
-        /* FOOTER */
-        footer {
-            padding: 50px;
-            background: #ffe4ec;
-        }
-
-        /* WHATSAPP */
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            font-size: 22px;
-            padding: 15px;
-            border-radius: 50%;
-            text-decoration: none;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-    </style>
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+</style>
 </head>
 
 <body>
 
-    <nav>
-        <div class="logo">Vicky GurumiS</div>
-    </nav>
+<nav>Vicky GurumiS</nav>
 
-    <section class="hero">
-        <h1>Tejidos con amor 💕</h1>
-        <p>Amigurumis e hilados suaves, únicos</p>
-        <a href="https://wa.me/5493516665211?text=Hola!%20Quiero%20ver%20tus%20amigurumis%20💕" target="_blank"
-            class="btn">
-            Pedir por WhatsApp
-        </a>
+<section class="hero">
+    <h1>Tejidos con amor 💕</h1>
+    <p>Amigurumis e hilados suaves, únicos</p>
 
-        <p>El secreto de un buen tejido está en el material. ✨</p>
-    </section>
+    <a href="https://wa.me/5493516665211?text=Hola!%20Quiero%20ver%20tus%20productos%20💕" target="_blank" class="btn">
+        Pedir por WhatsApp
+    </a>
 
-    <section class="section">
-        <h2>Trapillo</h2>
-        <p>Ideal para tejer cestas, bolsos y alfombras increíbles. <br>Trapillo premium, suave al tacto y firme en tus
-            puntos</p>
-        <div class="grid">
-            <section class="section">
-    <h2>Galería</h2>
+    <p>El secreto de un buen tejido está en el material ✨</p>
+</section>
+
+<section class="section">
+    <h2>Trapillo</h2>
+    <p>Ideal para cestas, bolsos y alfombras</p>
 
     <div class="gallery">
-        <p>Trapillo de Algodon liso, varios colores.</p>
-        <img src="img/hilados/algodonliso.jpeg">
-        <p>Trapillo de Algodon degrade, varios colores.</p>
-        <img src="img/hilados/AlgodonDegrade.jpeg">
-        <p>Trapillo de Algodon matizado, varios colores.</p>
-        <img src="img/hilados/algodonMatizado.jpeg">
-        <p>Trapillo Lycra matizado, varios colores.</p>
-        <img src="img/hilados/lycraMatizado.jpeg">
+
+        <div class="item">
+            <img src="img/hilados/algodonliso.jpeg">
+            <p>Algodón liso</p>
+        </div>
+
+        <div class="item">
+            <img src="img/hilados/AlgodonDegrade.jpeg">
+            <p>Algodón degradé</p>
+        </div>
+
+        <div class="item">
+            <img src="img/hilados/algodonMatizado.jpeg">
+            <p>Algodón matizado</p>
+        </div>
+
+        <div class="item">
+            <img src="img/hilados/lycraMatizado.jpeg">
+            <p>Lycra matizado</p>
+        </div>
+
     </div>
 </section>
 
-            <!--  <div class="card">
-            <img src="img/1.jpg">
-            
-            <p> Hilados 100% algodón peinado, premium, ideal para amigurumis, no se sale la pelusa.
-                Para ropita de bebé, no pica, muy suave al tacto.
-                 Varios colores</p>
-        </div>
-        <div class="card">
-            <img src="img/hilados/algodonliso.jpeg">
-            <p>Trapillo de Algodon liso, varios colores.</p>
-        </div>
+<section class="section">
+    <h2>Hilados</h2>
+    <p>Colores suaves y materiales premium</p>
 
-        <div class="card">
-            <img src="img/hilados/AlgodonDegrade.jpeg">
-            <p>Trapillo de Algodon degrade, varios colores.</p>
-        </div>
-        <div class="card">
-            <img src="img/hilados/algodonMatizado.jpeg">
-            <p>Trapillo de Algodon matizado, varios colores.</p>
-        </div>
+    <div class="colors">
+        <div class="color" style="background:#ffd6e0"></div>
+        <div class="color" style="background:#cdb4db"></div>
+        <div class="color" style="background:#a2d2ff"></div>
+        <div class="color" style="background:#fefae0"></div>
+    </div>
+</section>
 
-        <div class="card">
-            <img src="img/hilados/lycraMatizado.jpeg">
-            <p>Trapillo Lycra matizado, varios colores.</p>
-        </div>-->
-        </div>
-    </section>
+<section class="section">
+    <h2>Sobre mí</h2>
+    <p class="about">
+        Soy Vicky y creo cada amigurumi a mano, con amor en cada punto 💕
+    </p>
+</section>
 
-    <section class="section">
-        <h2>Hilados</h2>
-        <p>Colores suaves y materiales premium</p>
+<footer>
+    <a href="https://wa.me/5493516665211?text=Hola!%20Quiero%20hacer%20un%20pedido%20💕" target="_blank" class="btn">
+        Hacer pedido
+    </a>
+</footer>
 
-        <div class="colors">
-            <div class="color" style="background:#ffd6e0"></div>
-            <div class="color" style="background:#cdb4db"></div>
-            <div class="color" style="background:#a2d2ff"></div>
-            <div class="color" style="background:#fefae0"></div>
-            <div class="color" style="background:#bde0fe"></div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Sobre mí</h2>
-        <p class="about">
-            Soy Vicky y creo cada amigurumi a mano, con dedicación y amor en cada punto.
-            Cada pieza es única y pensada para transmitir ternura 💕
-        </p>
-    </section>
-
-    <footer>
-        <a href="https://wa.me/5493516665211?text=Hola!%20Quiero%20hacer%20un%20pedido%20💕" target="_blank"
-            class="btn">
-            Hacer pedido
-        </a>
-    </footer>
-
-    <a href="https://wa.me/5493516665211" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/5493516665211" class="whatsapp" target="_blank">💬</a>
 
 </body>
-
 </html>
